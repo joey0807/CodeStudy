@@ -1,3 +1,4 @@
+#2072
 T = int(input()) #테스트 케이스 개수 T 입력받음
 
 for i in range(T): #테스트 케이스만큼 반복
