@@ -21,7 +21,7 @@ for i in range(10): #10개의 테스트케이스
             num = 1 #똑같이 개수를 세는 변수
             word = '' #배열을 입력받는 변수를 *초기화* - 안해주니까 세로 계산이 제대로 안됨
             for z in range(x,x+n): #x번째 행부터 회문의 길이만큼 문자열을 저장
-                word += palidom[z][y] #나머지는 가로로 셀 때와 같음
+                word += palidom[z][y] #세로 계산은 범위만큼 인덱스 슬라이싱이 안되기 때문에 for문을 한번 더 중첩해서 행을 반복순회
             if word == word[::-1]:
                 num *= 1
             else:
