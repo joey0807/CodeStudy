@@ -1,7 +1,7 @@
 def process(tp):
     global password
     if tp[0] == 'I':
-        for x in range(len(tp[3:])):
+        for x in range(0,len(tp[3:])):
             password.insert(int(tp[1])+x, tp[3+x])
     elif tp[0] == 'D':
         for _ in range(int(tp[2])):
@@ -9,7 +9,7 @@ def process(tp):
             if len(password) == int(tp[1]):
                 break
     elif tp[0] == 'A':
-        for x in range(int[tp[1]]):
+        for x in range(int(tp[1])):
             password.append(tp[2+x])
 
 for i in range(10):
