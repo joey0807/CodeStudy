@@ -1,7 +1,7 @@
 T = int(input()) #테스트케이스 개수
 for i in range(T):
     N = int(input()) #입력받을 문자 개수
-    card = list(map(str, input().split())) #문자 입력
+    card = input().split() #문자 입력
     card_num = len(card)//2 #문자 개수/2의 정수값
 
     new_card = [] #셔플해서 새로 만들 리스트
